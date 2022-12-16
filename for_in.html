@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=scripy, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <input type="text" class="name">
+        <input type="text " class="lname">
+        <button>click</button>
+        <!-- <p></p> -->
+    </div>
+    <script>
+        let input1 = document.querySelector(".name")
+        let input2 = document.querySelector('.lname')
+        let button = document.querySelector('button')
+        
+        let a=0
+  
+        button.onclick =() =>
+        { 
+           if(a<2)
+           {          
+               
+            object = {}
+            object.firstname = input1.value
+            object.lastname = input2.value
+            let para = document.createElement('p')
+            document.querySelector('#wrapper').appendChild(para)
+            para.innerHTML =  "your name:  "+object.firstname+' '+object.lastname
+            input1.value=''
+                input2.value=''
+           }
+        else {
+            document.write('nothing to write')
+        }
+        a++
+    }
+
+
+
+        // let para = document.querySelector('p')
+        // let object ={
+        //     firstname : '',
+        //     lastname : ''
+        // }
+        // button.onclick = () =>
+        // {   let object ={
+        //     firstname : '',
+        //     lastname : ''
+        // }
+
+        //     for(let a=0 ;a<2;a++)
+        //     {
+
+        //     object.firstname = input1.value
+        //     object.lastname = input2.value
+        //     let new = document.createElement('p')
+        //     document.querySelector('#wrapper').appendChild(new)
+
+        //     new.innerHTML = object.firstname+' '+object.lastname
+        //   }
+    // }
+
+        // for (let x in object) {
+        //     para.innerHTML += object[x]
+        // }
+
+    </script>
+</body>
+</html>

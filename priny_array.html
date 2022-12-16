@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print name in array</title>
+<style>
+    
+        #wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:column ;
+            height: 100vh;
+            padding: 1% 0;
+        }
+        input{
+            margin: 5px 0;
+        }
+        button{
+            margin: 5px 0;
+        }
+    
+</style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="text" placeholder="write your friend's name">
+        <button>add name in array
+        </button>
+        <button class="button2">add name</button>
+        <p></p>
+    </div>
+    <script>
+        let array = []
+        let input = document.querySelector('input')
+        let button = document.querySelector('button')
+        button.onclick = () =>
+        {
+            // console.log('hello')
+            array.push(input.value)
+            input.value = ''
+            // array.split('')
+            input.focus()
+            console.log(array)
+        }       
+        let para = document.querySelector('p')
+        let button2 = document.querySelector('.button2')
+        button2.onclick = () =>
+        {
+            
+            array.reverse()
+            for(let i = 0 ; i<array.length;i++)
+            {
+               array[i] = array[i].split('').reverse().join('')
+            }
+             para.innerHTML = array
+                
+        }
+        
+    </script>
+</body>
+</html>

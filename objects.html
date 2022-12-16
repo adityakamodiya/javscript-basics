@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="text">
+        <button>click here</button>
+        <p></p>
+    </div>
+    <script>
+        let button = document.querySelector('button')
+        
+        let input = document.querySelector('input')
+        let data = {
+            name : '',
+            lastname : '',
+            // Arr : ['adi','aditya','akshat','ritika']
+        }
+        document.write(data.name,data.lastname)
+        button.onclick = () =>
+    {
+        // for(let i=0 ;i<5;i++)
+        {
+            let para = document.createElement('p')
+            document.querySelector('#wrapper').appendChild(para)
+            // data.name = input.value
+        para.innerHTML = input.value
+        input.value = ''
+
+        }
+        // console.log('aditya')
+    }
+        // for(let i=0 ;i<4;i++)
+    //    let   Arr = ['adi','aditya','akshat','ritika']
+    // {
+        // console.log(Arr)
+    // }
+    </script>
+</body>
+</html>

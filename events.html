@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <textarea placeholder="write a message"  name="" id="" cols="30" rows="10"></textarea>
+        <!-- <p></p> -->
+    </div>
+    <script>
+        let textarea = document.querySelector('textarea')
+        // let para = document.querySelector('p')
+             console.log('para')
+        // let node = document.createTextNode
+        // console.log('p');
+        let para = document.createElement('p') //<p></p>
+        textarea.onkeyup = () =>
+        { 
+       
+            let textarray = textarea.value.split('')
+            // console.log('djg')
+            let output = ''
+ 
+                for(let a = textarray.length-1;a>=0;a--)
+                {
+                    output += textarray[a] 
+                }
+                para.innerText = output
+                document.querySelector("#wrapper").appendChild(para)
+    }
+
+        
+</script>
+</body>
+</html>

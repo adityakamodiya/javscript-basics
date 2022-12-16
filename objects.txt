@@ -1,0 +1,13 @@
+OBJECTS 
+FOR IN LOOP 
+OBJECT.KEYS
+OBJECTS.CREATE
+SHALLOW COPY 
+DEEP COPY
+
+
+
+
+assignments for tomorrow
+
+

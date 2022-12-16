@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p id="demo"></p>
+<body>
+    <script>
+     
+    // console.log(array[0][0],array[1][0]);
+ 
+//  PRINTING ARRAY ElementS  LINEARLY
+//     for(let i=0;i<array.length;i++)
+//     {
+//     for(let j=0;j<array.length;j++)
+//     {
+//         console.log(array[j][i])
+    
+//     }
+// }
+
+// PRINTING ARRAY ElementFROM LAST ONE
+    // for(let a=1;a>=0;a-- )
+    // {
+    //     for(let b=1;b>=0;b--)
+    //     {
+    //         console.log(array[a][b])
+    //     }
+    // }
+    // let sum = 0;
+    // let multi = 1
+    // let arr = [1,2,3]
+    // arr.forEach(items => {
+    //     console.log(items)
+    //     sum = sum+items
+    //     multi = multi*items
+    // });
+    // console.log(sum)
+    
+    // console.log(multi)
+
+    //  
+// let arr = [1,2,3]
+//  arr.map(numbers =>
+//  {
+//     console.log(numbers)
+//  })
+//  arr.map(show)
+//  function show(item){
+//     console.log(item)
+//  }
+ 
+
+
+  //   let array = [
+  //           ['aditya','akshat'],
+  //           ['kamodiya','sharma']
+  //   ]
+  // for(let i=0;i<2;i++)
+  // {
+  // for(let j=0;j<2;j++)
+
+  // console.log(array[j][i])
+  // }   
+    // array.forEach(elements =>
+    // {
+    //     elements.forEach(elements2 =>
+    //     {
+    //         console.log(elements2)
+    //     })
+    // });
+
+    // let  collection = [5,4,3,1,2,6,7,8,9,10]
+    // collection.reduce(add =>
+    // {
+    //     function add(first,last){
+    //         console.log(first+last)
+    //     }
+    // })
+
+
+    //   collection.filter(show)
+    //   function show(numbers)
+    //   {
+    //     if(numbers%2==0)
+    //     {
+    //         console.log(numbers)
+    //     }
+    //   }
+
+
+     let A = [12,34,5,53,45,2,64,3,9,34]
+      for(let a=0;a<A.length;a++)
+      {
+        if(A[a]>=20)
+        {
+            document.write(A[a]+'<br>')
+        }
+      }
+      document.write('<br>')
+      A.forEach(show)
+      function show(numbers)
+      {
+        if(numbers>=20)
+        {
+            document.write(numbers+'<br>')
+        }
+      }
+      document.write('<br>')
+      document.write('<br>')
+      A.forEach(show =>
+      {
+        if(show>=20)
+        document.write(show+ '<br>' )
+      })
+      document.write('<br>')
+      A.filter(show)
+      function show(numbers)
+      {
+        if(numbers>=20)
+        {
+            document.write(numbers+'<br>')
+        }
+      }
+    </script>
+</body>
+</html>
