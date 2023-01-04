@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #wrapper
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+    a{
+        padding: 0 10px;
+        text-decoration: none;
+    }
+    .html{
+        padding: 10px 15px;
+        background-color: yellowgreen;
+        border-radius: 5px;
+    }
+    .css{
+        height: 200px;
+        border : 1px solid;
+        display: none;
+    }
+    .html.css{
+        display: block;
+        display: none;
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <div class="div1">
+            
+        <a href="" class="html">html</a>
+        <a href="">react</a>
+        <a href="">javascript</a>
+        <a href="">node</a>
+        </div>
+    </div>
+        <div class="div2">
+            <div class="css">
+                <p>html box</p>
+            </div>
+            <div class="css">
+                <p>css box</p>
+            </div>
+            <div class="css">
+                <p>js box</p>
+            </div>
+            <div class="css">
+                <p>node box</p>
+            </div>
+            <!-- <div class="css"></div> -->
+        </div>
+    
+    <script>
+        let ankors = document.querslySelectorAll('a')
+        // ankors.length
+        let box = document.querySelectorAll('.css')
+        for(let i=0;i<ankors.length;i++)
+        {
+            ankors[i].onclick = (e) =>
+            {
+                e.preventDefault()
+                 let changes = document.querySelector('.html')
+                        changes.classList.remove('html')
+                        ankors[i].classList.add('html')
+                        
+                    }
+
+        }
+    </script>
+</body>
+</html>

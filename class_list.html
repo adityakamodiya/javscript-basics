@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .chang{
+        
+        background-color: red;
+        /* padding: 20px 0; */
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .remove_changes{
+        background-color: white;
+        padding: 0;
+    }
+    .box{
+        height: 40px;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+</style>
+<body>
+    <div id="wrapper">
+        <div class="box">
+            <p>i will change myself</p>
+        </div>
+        <button>click</button>
+        <button  class="remove">remove</button>
+    </div>
+    <script>
+        let remove = document.querySelector('.remove')
+      let button = document.querySelector('button')
+      button.onclick = () =>
+      {
+        let changes = document.querySelector('.box')
+        console.log(changes)
+        changes.classList.add('chang')
+        remove.onclick  = () =>
+        {
+            let remove_changes = document.querySelector('.box').classList
+            remove_changes.remove('chang')
+        }
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            1:'ram',
+            2:'aditya',
+            3:'akshat',
+            4:'ritika',
+            5:'sneha'
+        }
+        console.log(obj)
+        let ARRAY =[]
+        let array = (Object.keys(obj))
+       let key
+                        array.forEach(key =>
+                        {
+                            // console.log(array)
+                            // console.log(obj[key])
+                            if(key%2===0){
+                                console.log(key+":"+obj[key])
+                               
+                                let bb = obj[key].split('') 
+                                console.log(bb[0])
+
+                                // console.log(ARRAY)
+                                // console.log(ARRAY.push(bb[0]))
+                                ARRAY.push(bb[0])
+                                console.log(ARRAY)
+                            }
+                           
+                        })
+                        
+
+                    let a= 'aditya'
+                    let aa = a.split('')
+                //   document.write  (a.split(''))
+                //   document.write(a.split(''))
+                  document.write(aa[0])
+    </script>
+</body>
+</html>
